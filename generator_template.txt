@@ -1,0 +1,38 @@
+{
+  'posts': [
+    {
+      'repeat(100)': {
+        id: '{{index(1)}}',
+        title: '{{lorem(1)}}',
+        publishDate: '{{moment(this.date(new Date(1970, 0, 1), new Date())).format("LLLL")}}',
+        about: '{{lorem(1, "paragraphs")}}',
+        tags: [
+          {
+            'repeat(3, 7)': '{{lorem(1, "words")}}'
+          }
+        ],
+        author: {
+          firstName: '{{firstName()}}',
+          lastName: '{{surname()}}'
+        },
+        authorName: function(tags) {
+          return this.author.firstName + ' ' + this.author.lastName;
+        },
+        authorEmail: function (tags) {
+          return (this.author.firstName + '.' + this.author.lastName + '@' + this.company + tags.domainZone()).toLowerCase();
+        }
+      }
+    }
+  ],
+  'comments': [ 
+    {
+      'repeat(80)': {
+        id: '{{index(1)}}',
+        postId: function(tags) {
+          return (Math.floor(Math.random() * 100) + 1);
+        },
+        body: '{{lorem(1, "paragraphs")}}'
+      }
+    }
+  ]
+}

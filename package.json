@@ -1,0 +1,23 @@
+{
+  "name": "http-learn",
+  "version": "1.0.0",
+  "description": "A learning project for NodeJS http",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "dummy": "./node_modules/json-server/bin/index.js --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://"
+  },
+  "keywords": [
+    "nodejs",
+    "http"
+  ],
+  "author": "Arnab Das <arnab@coderuse.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "json-server": "^0.10.0"
+  }
+}
