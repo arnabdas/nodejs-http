@@ -1,5 +1,7 @@
 # Learn http module of NodeJS
 
+[![CodeRuse Slack](http://slack.coderuse.com/badge.svg)](http://slack.coderuse.com "Let's discuss some interesting stuff!")
+
 A learning project for NodeJS `http` module.
 
 #### How to run
